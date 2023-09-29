@@ -20,3 +20,6 @@ if playerSelection == rock & computer == scissors|| player == paper & computer =
 display win
 
 else you loose.
+
+Create a function game :
+the game function has 5 rounds, after each round, count the points.
