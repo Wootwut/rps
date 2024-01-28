@@ -41,15 +41,14 @@ function playRound(playerSelection, computerSelection){
    
         }    
 
-function gameResult(result){
-    if ((computerPoints || playerPoints) < 5){
+    function gameResult(result) {
         text.innerText = result;
-        score.innerText = "Your score: " + playerPoints + " -- Computer's score: " + computerPoints
-    }
-    else {
-       gameOver()
-    }    
-}
+        score.innerText = "Your score: " + playerPoints + " -- Computer's score: " + computerPoints;
+        
+            if (computerPoints >= 5 || playerPoints >= 5) {
+                gameOver();
+            }
+        }
 function gameOver(){
   
    if (playerPoints > computerPoints ){
